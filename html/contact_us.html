@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lambton flight ticket booking</title>
+        <link rel="shortcut icon" href="../images/title.png" type="image/x-icon" /> 
+        <!-- External css -->
+        <link rel="stylesheet" href="../css/contact_us.css" media="screen and (min-width:769px)">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/home.js" type="text/javascript"></script>
+    
+    </head>
+<body>
+	
+	<!-- Use the header area for the website name or logo -->
+	<header>
+		<img src="../images/logo.png" id="logo" alt="logo">
+	</header>
+	<!--Use the nav area to add hyperlinks to other pages within the website -->
+	<nav class="desktop-and-mobile-only">
+        <ul>
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">History Of Booking</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+                
+            <li class="nav-right"><a href="#"><img src="../images/settings.png" id="settings" alt="settings" ></a></li>
+            <li class="nav-right"><a href="#">Login/Signup</a></li>
+            <li class="nav-right desktop-only">
+                <form method="post" action="submit">
+                    <input id="nav-search" type="search" placeholder="Search flight details with flight number">
+                </form>
+            </li>
+        </ul>
+	</nav>
+	<nav class="tablet-only">
+		<ul>
+
+			<li><a href="../home.html"><img class="img-menu" src="../images/menu_home.png" alt="home"><br>Home</a></li>
+			<li><a href="patient_history.html"><img class="img-menu" src="../images/menu_history.png" alt="history"><br>History</a></li>
+			<li><a href="products_and_services.html"><img class="img-menu" src="../images/menu_buy.png" alt="buy"><br>Buy</a></li>
+			<li><a href="about_us.html"><img class="img-menu" src="../images/menu_about.png" alt="about"><br>About us</a></li>
+			<li><a href="contact_us.html"><img class="img-menu" src="../images/menu_contact.png" alt="contact"><br>Contact us</a></li>
+				
+			   
+			<li class="nav-right"><a href="#"><img class="img-menu" src="../images/settings.png"  alt="settings"><br>Settings</a></li>
+			<li class="nav-right"><a href="#"><img class="img-menu" src="../images/menu_login.png" alt="login-signup"><br>Login/Signup</a></li>
+		</ul>
+	</nav>
+
+	
+	<!-- Use the main area to add the main content of the webpage -->
+	<main id="main">
+		<!--In page navigation-->
+		<section class="about-us-sub-heading">
+			<ul>
+				<li><a href="#">Contact us</a></li>
+                <li><a href="#book-appointment">Our location</a></li>
+                <li><a href="#book-appointment">Submit a query</a></li>
+				<li><a href="tel:+1800123456789">Talk to our customer care</a></li>
+			</ul>
+
+        </section>
+
+      
+        <article id="book-appointment">
+            <h3 class="sub-heading">Fill contact form to submit a query <a href="#"><img src="../images/collapse.png" alt="icon"></a></h3>
+           <div class="form-div">
+                    <aside class="form-element">
+                    <form action="#" method="POST">
+                        <span class="form-label">
+                            <label for="fname">First Name:</label>
+                        </span>
+                        <span class="form-input">
+                            <input type="text" name="fname" class="fname text-bx" placeholder="First name" required>
+                        </span> 
+                        <br>
+                        <span class="form-label">
+                            <label for="lname">Last Name:</label>
+                        </span>
+                        <span class="form-input">
+                            <input type="text" name="lname" class="lname text-bx" placeholder="Last name" required>
+                        </span>
+                        
+                        <br>
+                        <span class="form-label">
+                            <label for="email">Email:</label>
+                        </span>
+                        <span class="form-input">
+                            <input type="text" name="email" class="email text-bx" placeholder="Email Address" required>  
+                        </span>
+                        <br>
+
+                        <span class="form-label">
+                            <label for="department">Query related to:</label>
+                        </span>
+                        <span class="form-input">
+                        <select>
+                            <option>--select--</option>
+                            <option>Ticket cancellation</option>
+                            <option>Refund</option>
+                            <option>Problem with ticket</option>
+                            <option>Others</option>
+                        </select>
+                        </span>
+                        <br>
+                        <span class="form-label">
+                            <label for="text-area">Comments:</label>
+                        </span>
+                        <span class="form-input">
+                            <textarea rows="4" cols="36"></textarea>
+                        </span>
+                        <br>
+                        <span class="form-label">
+                            <label for="date">Preferred callback:</label>
+                        </span>
+                        <span class="form-input">
+                        <input type="date" name="date" class="date-time-bx">
+                        <input type="time" name="time" class="date-time-bx">
+                        </span>
+                        <br>
+                        <span class="form-label">
+                        <label for="sex">Sex:</label>
+                        </span>
+                        <input type="radio" name="sex" value="male" class="input-btn">M
+                        <input type="radio" name="sex" value="female" class="input-btn">F
+                        <br>
+                        <input type="checkbox" name="urgent" class="input-btn">
+                        <label for="urgent">Is urgent?:</label>
+                        <br>
+                        <input type="submit" value="Contact Us" class="btn-search">
+                    </form>
+
+                    </aside>
+                    <aside class="form-element">
+                            <h2>Contact us in person in</h2>
+                            <p>If you are in GTA, Toronto, Call the below number, book an appointment or feel free to visit us in person</p>
+                            <h2>Our Headquaters address</h2>
+                        <dl>
+                            <dt>Address</dt>    
+                            <dd>Building,Streen Name, City-PIN landmark:Near Central Railway Station</dd>
+                            <dt>Email Address</dt>
+                            <dd><a href="mailto:Ticket@gmail.com">Ticket@gmail.com</a></dd>
+                            <dt>Phone Number</dt>
+                            <dd><a href="tel:+12345678">+111232623333</a></dd>
+                        </dl>
+                        <h2>Location of our Headquaters</h2>
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319"  frameborder="0" style="border:0"></iframe>
+                    </aside>
+            </div> 
+
+        </article>
+		
+	</main>
+	
+	<!-- Use the footer area to add webpage footer contet -->
+	<footer class="footer">
+		<span>
+			Copyright &copy; 2021
+		</span>
+		<span class="footer-right">   
+			Get social with us:
+			<a href="#"><img src="../images/twitter.png" alt="social media"></a>
+			<a href="#"><img src="../images/insta.png" alt="social media"></a>
+			<a href="#"><img src="../images/whatsapp.png" alt="social media"></a>                    
+		</span>
+</footer>
+	
+</body>
+</html>
