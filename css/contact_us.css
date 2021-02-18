@@ -7,7 +7,7 @@ CSS RULES:
 /***Common viewport***/
 
 /***Desktop viewport***/
-@media screen and (min-width: 769px) {
+/* @media screen and (min-width: 769px) { */
 
     body{
         height: 100%;
@@ -216,5 +216,5 @@ CSS RULES:
      
 
 
-    }
+    /* } */
    
