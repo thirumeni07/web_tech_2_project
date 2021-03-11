@@ -209,12 +209,17 @@ CSS RULES:
           margin:1em;
 
       }
-      .map{
-          height: 100%;
-          width:100%
+      #map{
+        height:200px;
+        width: 80%;
       }
      
-
+      label.error {
+        float: right;
+        color: red;
+        position:relative;
+        margin-left: 5rem;
+      }
 
     /* } */
    
