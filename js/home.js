@@ -44,4 +44,11 @@ $.getJSON("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiserv
 });       
 });
 
+$('.book_ticket').click(function(){
+
+    //alert($(this).parents('tr').find('td:eq(3)').text())
+    sessionStorage.setItem("price", $(this).parents('tr').find('td:eq(3)').text());
+    window.location.replace("html/payment.html");
+})
+
 });
