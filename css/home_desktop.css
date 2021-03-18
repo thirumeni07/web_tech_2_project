@@ -7,10 +7,13 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(134,134,233,1) 35%, r
     z-index: -1;
 }
 
-input:focus, select:focus{outline: none;
+input:not([type=submit]):not([type=reset]):focus, select:focus{outline: none;
 background-color: rgb(248, 207, 130);
 border: solid rgb(252, 20, 3) 0.2em;
 }
+
+button:focus{outline: none;
+  }
  
 #logo {width:100%}
 .nav-right {float:right}
