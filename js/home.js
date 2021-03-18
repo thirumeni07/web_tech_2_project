@@ -402,24 +402,24 @@ $('#search-button').click(function(){
             'arrival': '01-Apr-2021 11:10 PM','price': '$ 127'
         },
         {
-            'depart': '01-Apr-2021 5:00 PM',
-            'duration': '18H 13M' ,
-            'arrival': '01-Apr-2021 11:10 PM','price': '$ 127'
+            'depart': '01-Apr-2021 11:00 AM',
+            'duration': '7H 50M' ,
+            'arrival': '01-Apr-2021 6:50 PM','price': '$ 127'
         },
         {
             'depart': '01-Apr-2021 5:00 PM',
             'duration': '18H 13M' ,
-            'arrival': '01-Apr-2021 11:10 PM','price': '$ 127'
+            'arrival': '01-Apr-2021 11:10 PM','price': '$ 780'
         },
         {
             'depart': '01-Apr-2021 5:00 PM',
             'duration': '18H 13M' ,
-            'arrival': '01-Apr-2021 11:10 PM','price': '$ 127'
+            'arrival': '01-Apr-2021 11:10 PM','price': '$ 440'
         },
         {
-            'depart': '01-Apr-2021 5:00 PM',
-            'duration': '18H 13M' ,
-            'arrival': '01-Apr-2021 11:10 PM','price': '$ 127'
+            'depart': '01-Apr-2021 4:00 PM',
+            'duration': '4H 10M' ,
+            'arrival': '01-Apr-2021 8:10 PM','price': '$ 350'
         },
         {
             'depart': '01-Apr-2021 5:00 PM',
