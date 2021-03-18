@@ -194,7 +194,13 @@ nav ul {
     height: 3em;
 
 }
-
+.book_button{
+  background-color: maroon;
+  color: white;
+  border-radius: 5em;
+  width: 5em;
+  height: 1.5em;
+}
 .table-search tr, .table-search td, .table-search th{
     border: solid black;
   }
