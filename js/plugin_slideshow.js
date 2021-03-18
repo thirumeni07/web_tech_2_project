@@ -6,6 +6,6 @@ $(document).ready(function(){
         autoControls: true,
         stopAutoOnClick: true,
         pager: true,
-        slideWidth: 1600
+        slideWidth: 1400
     });
 });
