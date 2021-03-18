@@ -38,14 +38,14 @@ $('#search-button').click(function(){
             'price': '$ 127'
         },
         {
-            'depart': '01-Apr-2021 5:00 PM',
-            'duration': '18H 13M',
-            'arrival': '01-Apr-2021 11:10 PM','price': '$ 127'
+            'depart': '01-Apr-2021 12:00 AM',
+            'duration': '13H 40M',
+            'arrival': '01-Apr-2021 1:40 PM','price': '$ 999'
         },
         {
-            'depart': '01-Apr-2021 5:00 PM',
-            'duration': '18H 13M' ,
-            'arrival': '01-Apr-2021 11:10 PM','price': '$ 127'
+            'depart': '01-Apr-2021 3:30 PM',
+            'duration': '3H 30M' ,
+            'arrival': '01-Apr-2021 7:00 PM','price': '$ 730'
         },
         {
             'depart': '01-Apr-2021 5:00 PM',
