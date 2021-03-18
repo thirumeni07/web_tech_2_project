@@ -3,9 +3,20 @@ body{
     height: 100%;
     width:100%;
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(134,134,233,1) 35%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(134,134,233,1) 35%, rgba(255,255,255,1) 100%);
     z-index: -1;
+    overflow-x: hidden;
 }
+
+input:not([type=submit]):not([type=reset]):focus, select:focus{
+  background-color: rgb(248, 207, 130);
+  border: solid rgb(252, 20, 3) 0.2em;
+}
+
+button:focus, input:focus, select:focus{
+  outline: none;
+  }
+ 
 #logo {width:100%}
 .nav-right {float:right}
 header {float: left;
@@ -40,6 +51,7 @@ nav ul {
     text-align: center;
     padding: 1.25em 1.25em;
     text-decoration: none;
+    border-radius: 5em;
   }
   
   nav li a:hover {
@@ -169,12 +181,26 @@ nav ul {
 .search_button{
     background-color: maroon;
     color: white;
+    border-radius: 5em;
+    width: 8em;
+    height: 3em;
+
 }
 .clear_button{
     background-color: rgb(3, 71, 15);
     color: rgb(255, 255, 255);
-}
+    border-radius: 5em;
+    width: 8em;
+    height: 3em;
 
+}
+.book_button{
+  background-color: maroon;
+  color: white;
+  border-radius: 5em;
+  width: 5em;
+  height: 1.5em;
+}
 .table-search tr, .table-search td, .table-search th{
     border: solid black;
   }
