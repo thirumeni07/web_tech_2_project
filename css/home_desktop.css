@@ -181,12 +181,16 @@ nav ul {
     background-color: maroon;
     color: white;
     border-radius: 5em;
+    width: 8em;
+    height: 3em;
 
 }
 .clear_button{
     background-color: rgb(3, 71, 15);
     color: rgb(255, 255, 255);
     border-radius: 5em;
+    width: 8em;
+    height: 3em;
 
 }
 
