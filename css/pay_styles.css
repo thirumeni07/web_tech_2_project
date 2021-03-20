@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-color:#060333;
+    color: rgb(241, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+  }
+  
+.movie-container {
+    margin: 20px 0;
+  }
+  
+.payment{
+  background: #f8f8f8;
+  max-width: 340px;
+  margin: 80px auto;
+  height: auto;
+  padding: 30px;
+  padding-top: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+p.text {
+    font-size: 12 px;    
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #0d3c61;
+  }
+  p.text span {
+    color: #6feaf6;
+  }
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 10px 0px 10px 20px;
+  width: 80%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+.input_text{
+    padding: 5px 0px 5px 20px;
+    width: 80%;
+    text-align: center;
+    border: 2px solid #dddddd;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    outline: none;
+    font-size: 14px;
+    color: #555555;
+  }
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 40px;
+  font-size: 20px;
+  background: #2196F3;
+  width: 200px;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
