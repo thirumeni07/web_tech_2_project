@@ -530,6 +530,16 @@ $('#search-button').click(function(){
     
             buildTable()
         })
+
+        var from = $('.from').val();
+        var to = $('.to').val();
+        var url = "/fetch-flight-data?from="+from+"&to="+to;
+        $.get(url, function(data){
+            if(data == "[]")
+                data = "No results found"
+            //$('.result').text(data);
+            //Console.log(JSON.parse(data))
+        });
     
     }
     
