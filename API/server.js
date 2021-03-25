@@ -14,16 +14,32 @@ MongoClient.connect(url, function(err, client){
         data = result;
     })
 
-//*********** Routing for index.html **************/
+//********** Routing for index.html **************/
 app.get('/',function(request, response){
+    console.log('comes here...')
     response.sendFile(__dirname+'/'+'index.html')
 })
 
 //********** Handling post request and responding with json data **************/
        
 app.get('/fetch-flight-data', function(request, response){
-    response.write(JSON.stringify(data));
-    console.log(data)
+
+    var from = request.query.from;
+    var to = request.query.to;
+    console.log(from)
+    db.collection('flights').find({"$and":[{"from":from},{"to":to}]}).toArray(function(err, result){
+        if(err) throw err
+        data=result;
+        
+        console.log(data);
+        response.write(JSON.stringify(data));
+        response.end();
+    });
+
+})
+
+app.get('/weather-data', function(request, response){
+    response.write("Such a sunny day it is!")
     response.end();
 })
 

@@ -20,11 +20,13 @@
             //         $('body').html(data)
             //     }
             // });
-
-            $.get( "/fetch-flight-data", function( data ) {
-                
-                alert(data);
-                console.log(JSON.parse(data))
+            var from = $('.from').val();
+            var to = $('.to').val();
+            var url = "/fetch-flight-data?from="+from+"&to="+to;
+            $.get( url, function( data ) {
+                if(data=="[]")
+                    data = "No results found"
+                $('.result').text(data);
                 });
 
             })
@@ -35,9 +37,13 @@
 </head>
 <body>
     <form method="GET" action="#">
+        Source:
+        <input type="text" class="from">   <br/>
         Destination:
-        <input type="text" name="destination">   <br/>
+        <input type="text" class="to">   <br/>
+        
         <input type="button" value="search flight" class="search-flight" > 
+        <div class="result"></div>
     </form>
 </body>
 </html>
