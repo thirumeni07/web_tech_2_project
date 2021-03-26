@@ -6,43 +6,25 @@
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
 }
-body {
-    background-color:#060333;
-    color: rgb(241, 233, 233);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-  }
-  
-.movie-container {
-    margin: 20px 0;
-  }
-  
+
 .payment{
   background: #f8f8f8;
-  max-width: 340px;
+  max-width: 360px;
   margin: 80px auto;
   height: auto;
-  padding: 30px;
-  padding-top: 10px;
+  padding: 35px;
+  padding-top: 70px;
   border-radius: 5px;
   position: relative;
 }
 
-p.text {
-    font-size: 12 px;    
-    text-align: center;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-    color: #0d3c61;
-  }
-  p.text span {
-    color: #6feaf6;
-  }
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #0d3c61;
+}
+
 .form .label{
   display: block;
   color: #555555;
@@ -50,8 +32,8 @@ p.text {
 }
 
 .input{
-  padding: 10px 0px 10px 20px;
-  width: 80%;
+  padding: 13px 0px 13px 25px;
+  width: 100%;
   text-align: center;
   border: 2px solid #dddddd;
   border-radius: 5px;
@@ -61,18 +43,7 @@ p.text {
   font-size: 16px;
   color: #555555;
 }
-.input_text{
-    padding: 5px 0px 5px 20px;
-    width: 80%;
-    text-align: center;
-    border: 2px solid #dddddd;
-    border-radius: 2px;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    outline: none;
-    font-size: 14px;
-    color: #555555;
-  }
+
 .card-grp{
   display: flex;
   justify-content: space-between;
@@ -88,6 +59,11 @@ p.text {
 
 .icon-relative{
   position: relative;
+}
+#logo {width:100%}
+.nav-right {float:right}
+header {float: left;
+    width:8%;
 }
 
 .icon-relative .fas,
@@ -110,6 +86,40 @@ p.text {
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  
+  border-radius: 50%;
+}
+
+.payment-logo img{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
+}
+
 
 @media screen and (max-width: 420px){
   .card-grp{
