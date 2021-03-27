@@ -1,4 +1,11 @@
-
+.tablet-only{
+  display:none;
+  }
+.desktop-and-mobile-only{
+    display:block;
+  }
+.nav-right {float:right}
+.desktop-only{display:inline-block;}
 body{
   height: 100%;
   width:100%;
@@ -7,7 +14,9 @@ body{
   z-index: -1;
   overflow-x: hidden;
 }
-
+.theme-li{
+  font-size: small;
+}
 input:not([type=submit]):not([type=reset]):focus, select:focus{
 background-color: rgb(248, 207, 130);
 border: solid rgb(252, 20, 3) 0.2em;
@@ -61,7 +70,7 @@ nav li a:hover {
 #nav-search{
   margin-top: 1.3em;
   display:inline-block;
-  width:20em;
+  width:13em;
   height: 3em;
   padding-left:0.
   5em;
