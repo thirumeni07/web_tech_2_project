@@ -1,1 +1,282 @@
-{\rtf1}
+header {
+    display:block;
+    width:100%;
+    background-color:rgb(8, 130, 187);
+    text-align: center;
+}
+.bx-wrapper{
+    width:100% !important;
+}
+header img {
+    width:20em;
+}
+.tablet-only{
+    display:none;
+    }
+.desktop-and-mobile-only{
+      display:block;
+    }
+.desktop-only{display:none;}
+#settings{width:1.2em;} 
+
+nav {
+    width:auto;
+    background-color:rgb(10, 6, 6);
+    font-size: 20px;
+    /*transition: all 0.5s;*/
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(10, 6, 6);
+    display:block;
+}
+
+nav li {
+    margin:1em;
+    background-color:rgb(8, 130, 187);
+    display:block;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.25em 1.25em;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color:#140363;
+
+}
+#banner{
+    overflow: auto;
+    display: block;
+    width: 100%;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 8em;
+    }
+  #btn-appointment{
+    border-radius: 5em;
+    background-color: rgb(50, 95, 6);
+    color: white;
+    font-weight: bold;
+    padding: 1em;
+    box-shadow: 1em 1em 1em #4c4f4d;
+    margin-right: 2em;
+    
+  }
+
+.banner-aside{
+    display: block;
+    width: 70%;
+    background-color: #9ea0f7;
+    border-radius: 0 5em 5em 5em;
+    box-shadow: 1em 1em 1em #4c4f4d;
+    padding: 1.5em;
+    margin: 1em;
+
+}
+.banner-aside h3{
+    text-align: left;
+}
+
+#article-text{
+    text-align: right;
+    color: rgb(87, 84, 84);
+    font-size: 1.1em;
+}
+#article-text h2{
+
+    margin-right: 1em;
+}
+
+#article-btn{
+    text-align: right;
+
+}
+
+#main{
+    background-color: rgb(226, 210, 210);
+    margin-top: -1em;
+}
+
+.hospital-images{
+    display: block;
+    width: auto;
+}
+.hospital-images figcaption{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.hospital-images img{
+    width: 90%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.event-images{
+    display: block;
+    width: 70%;
+
+}
+
+.img-event img{
+    overflow: auto;
+    width:100%;
+}
+
+.sub-heading{
+    text-align:center;
+    background-color: rgb(8, 130, 187);
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    color: white;
+}
+.sub-heading img{
+    width:2%;
+    margin-right:0.5em;
+    float:right;
+    display: none;
+}
+
+
+/* #ticket-div{
+    width:100%;
+    text-align: center;
+  } */
+  
+  /* #ticket-div .details{
+    width:auto;
+    margin-left: 1em;
+  } */
+  
+  /* #ticket-div .details_child{
+    background-color: rgb(109, 190, 245);
+    box-shadow: 1em 1em 1em #4c4f4d;
+    
+  } */
+  
+  /* #ticket-div select, .input-text, .input-date{
+    
+    border-radius: 5em;
+    width: 21.5em;
+    height: 2.5em;
+    box-shadow: 1em 1em 1em #4c4f4d;
+    padding-left:1em;
+    margin:1em;
+  } */
+  /* .input-btn {
+    box-shadow: 1em 1em 1em #4c4f4d;
+    padding-left:1em;
+    margin:1em;
+    width: 5.5em;
+    height: 2.5em;
+   } */
+   /* .radio-btn {
+    box-shadow: 1em 1em 1em #4c4f4d;
+    margin:1em;
+    width: 1.5em;
+    height: 1.5em;
+   } */
+  .search_button{
+    background-color: maroon;
+    color: white;
+    border-radius: 5em;
+    width: 8em;
+    height: 3em;
+  
+  }
+  .clear_button{
+    background-color: rgb(3, 71, 15);
+    color: rgb(255, 255, 255);
+    border-radius: 5em;
+    width: 8em;
+    height: 3em;
+  
+  }
+  .book_button{
+  background-color: maroon;
+  color: white;
+  border-radius: 5em;
+  width: 5em;
+  height: 1.5em;
+  }
+  .table-search tr, .table-search td, .table-search th{
+    border: solid black;
+  }
+  .table-search caption{
+    background-color: rgb(8, 130, 187);
+    font-weight: bold;
+  }
+  .table-search th{
+    background-color: rgb(28, 8, 99);
+    color: white;
+    font-weight: bold;
+  }
+  .table-search 
+  {
+      width:100%;
+      
+      border: solid black;
+      margin-top:2.5em;
+      margin-bottom:3em;
+      
+      
+  }
+  .table-search td
+  {
+  padding-left: 1em;
+  }
+  .even 
+  {
+      background-color: gray;
+      
+  }
+  .odd 
+  {
+      background-color: rgb(249, 250, 236);
+  }
+  tfoot{
+      text-align:center;
+  }
+  .pagination bttn
+  {
+    display: inline-block;
+    color: white;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    background-color:rgb(8, 130, 187);
+    margin:0.5em;
+  }
+  .footer{
+    
+    background-color:rgb(8, 130, 187);
+    color: white;
+  }
+  .footer img{
+    width:1.5em;
+  }
+  .footer span{
+    display: inline-block;
+    text-align: right;
+    width:48%;
+  }
+  
+  .pagination_container{
+  border: 1px solid rgba(0, 0, 0, .11);
+  padding: 10px;
+  width: 500px;
+  }

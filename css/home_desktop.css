@@ -6,6 +6,12 @@
   }
 .nav-right {float:right}
 .desktop-only{display:inline-block;}
+.img-logo{
+  width:2.5em;
+}
+.logo-div{
+  text-align: center;
+}
 body{
   height: 100%;
   width:100%;
