@@ -198,7 +198,7 @@
                             <td>
                                 <form action="" method="GET">
                                   <input type="radio" id="round" name="trip" class="radio-btn" value="round1">
-                                  <label for="round">Round Trip</label>  &nbsp;&nbsp;&nbsp;&nbsp;                              
+                                  <label id='trip2' for="round">Round Trip</label>                               
                                   <input type="radio" id="single" name="trip" class="radio-btn" value="single1">
                                   <label for="single">Single Trip</label>                              
                                 </form>
@@ -220,20 +220,20 @@
                 <table class="table-search">
                     <caption>Available flights</caption>
                     <thead>
-                        <tr>
+                        <tr id="details">
                             <th>Departure</th>
                             <th>Duration</th>
                             <th>Arrival</th>
                             <th>Price</th>
-                            <th>Book</th>
+                            <th >Book</th>
                         </tr>
                     </thead>
                     <tbody id="table-body">
     
                     </tbody>
-                    <tfoot>
+                    <tfoot id="page-desktop-tablet-only">
                         <tr>
-                            <td colspan="7">
+                            <td id="page_border" colspan="7">
                                 <div class="pagination_container">
                                     <div id="pagination-wrapper"></div>
                                 </div>
