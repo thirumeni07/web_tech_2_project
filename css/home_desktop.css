@@ -276,3 +276,19 @@ border: 1px solid rgba(0, 0, 0, .11);
 padding: 10px;
 width: 500px;
 }
+
+.dark_red_theme{
+  background-color: rgb(170, 23, 23) !important;
+  background: rgb(170, 23, 23) !important;
+  color:white !important;
+}
+.dark_black_theme{
+  background-color: black !important;
+  background: black !important;
+  color:white !important;
+}
+.dark_gray_theme{
+  background-color: rgb(43, 41, 41) !important;
+  background: rgb(43, 41, 41) !important;
+  color:white !important;
+}
