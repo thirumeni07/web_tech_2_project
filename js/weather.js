@@ -23,7 +23,7 @@ $(document).ready(function(){
             var city = $('#city-search').val();
             var key = '151ff9657309b5501660994da2fef0a3';
             var units = $('.units:checked').val(); //standard, metric and imperial
-            var url= 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+key+'&units='+units;
+            var url= 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+key+'&units='+units;
             $.get(url,function(data){
                 var name = data.name;
                 var description_short = data.weather[0].main;
