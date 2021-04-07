@@ -21,7 +21,39 @@
     <script src="../js/weather.js"></script>
 
     
-    
+    <script>
+        $(document).ready(function(){
+            //$('#nav-holder').load('html/nav.html');
+            
+            // $.get("html/nav.html", function(data){
+            //     $("#nav-holder").replaceWith(data);
+            // });
+            var searchSuggestions = [
+                        "Air India",
+                        "Air Canada",
+                        "Air France",
+                        "Vistara",
+                        "IndiGo",
+                        "SpiceJet",
+                        "Alliance Air",
+                        "TruJet",
+                        "Qatar Airways",
+                        "Singapore Airlines",
+                        "ANA All Nippon Airways",
+                        "Cathay Pacific Airways",
+                        "Emirates",
+                        "EVA Air",
+                        "Hainan Airlines",
+                        "Qantas Airways",
+                        "Lufthansa",
+                        "Thai Airways"
+                        ];
+                $( "#nav-search" ).autocomplete({
+                source: searchSuggestions
+                });
+        })
+
+    </script>
 
 </head>
 <body>

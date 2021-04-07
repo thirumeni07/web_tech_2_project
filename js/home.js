@@ -153,5 +153,54 @@ $('.collapse-btn').click(function(){
 //    $('.collapse-cls, closest_cls').toggle();
 })
 
+$('.theme').click(function(){
+    var selected_theme = $(this).val();
+    if(selected_theme=='dark')
+    {
+        $('nav li a').css("background-color", "rgb(170, 23, 23)");
+        $('nav li a').hover(function(){
+            $(this).css("background-color", "black");
+            }, function(){
+            $(this).css("background-color", "rgb(170, 23, 23)");
+          });
+        $('nav').addClass('dark_red_theme');
+        $('nav ul').addClass('dark_red_theme');
+        $('body').addClass('dark_black_theme');
+        $('#main').addClass('dark_gray_theme');
+        $('.sub-heading').addClass('dark_red_theme');
+        $('#ticket-div .details_child').addClass('dark_red_theme');
+        $('.table-search caption').addClass('dark_red_theme');
+        $('.table-search th').addClass('dark_red_theme');
+        $('.table-search tr').addClass('dark_red_theme');
+        $('.table-search tr').css('border','solid white');
+        $('.table-search td').css('border','solid white');
+        $('.table-search th').css('border','solid white');
+        $('.footer').addClass('dark_red_theme');
+        $('.bx-wrapper').addClass('dark_black_theme');
+    
+    }
+    else{
+        $('nav li a').css("background-color", "rgb(8, 130, 187)");
+        $('nav li a').hover(function(){
+            $(this).css("background-color", "#140363;");
+            }, function(){
+            $(this).css("background-color", "rgb(8, 130, 187)");
+          });
+        $('nav').removeClass('dark_red_theme');
+        $('nav ul').removeClass('dark_red_theme');
+        $('body').removeClass('dark_black_theme');
+        $('#main').removeClass('dark_gray_theme');
+        $('.sub-heading').removeClass('dark_red_theme');
+        $('#ticket-div .details_child').removeClass('dark_red_theme');
+        $('.table-search caption').removeClass('dark_red_theme');
+        $('.table-search th').removeClass('dark_red_theme');
+        $('.table-search tr').removeClass('dark_red_theme');
+        $('.table-search tr').css('border','solid black');
+        $('.table-search td').css('border','solid black');
+        $('.table-search th').css('border','solid black');
+        $('.footer').removeClass('dark_red_theme');
+        $('.bx-wrapper').removeClass('dark_black_theme');
+    }
+    });
 
 });
