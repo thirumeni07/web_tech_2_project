@@ -1,0 +1,29 @@
+.ui-mobile a img, .ui-mobile fieldset {
+    border-width: 0;
+    height: 36.42px;
+    /* top: -2px; */
+    margin-top: -0.8em;
+    /* margin-bottom: 10em; */
+}
+
+#foot_left, #foot_right,#foot_head{
+    height: 17px;			
+}
+.log{
+    height: 16px;
+}
+#bot{
+    height: 25px;
+}
+.ui-controlgroup-horizontal .ui-controlgroup-controls {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -0.8rem;
+}
+.copy{
+    margin-top: -0.2rem;
+    height: 17px;	
+}
+ #bot #hold_together a{
+    padding-bottom: -10rem;
+}

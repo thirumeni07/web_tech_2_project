@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>FAQ</title>
+    <link rel="shortcut icon" href="../images/title.png" type="image/x-icon" /> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
     <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../css/faq.css">
+
     <script src="../js/faq.js"></script>
    
 </head>
+
 <body>
+      <div data-role="page" data-theme="b" >
+   <div data-role="navbar" data-iconpos="left" >
+       <ul >
+                 <li><a href="#" class="log" data-theme="b"><img src="../images/logo.png" alt="Logo, Facebook" style="height:35px;"/></a></li>
+                 <li><a rel="external" href="../index.html"  data-icon="home"  data-theme="b">Home</a></li>
+                 <li><a  rel="external" href="../html/weather.html"  data-icon="cloud" data-theme="b">Weather</a></li>
+         <li><a  rel="external" href="../html/contact_us.html"  data-icon="location" data-theme="b">Contact Us</a></li>           
+         <li><a href="#"  data-icon="info" data-theme="b">FAQ</a></li>
+       </ul>
+   </div>
+
+   <div data-role="content" data-theme="b" >
         <img src="../images/faq.jpg">
         <h1>Frequently Asked Questions</h1>
-        <section data-role="content">
-        <section data-role="collapsible-set"> 
-        <div data-role="collapsible" data-collapsed="false" id="faqs">
-            
-
+        <div data-role="collapsible-set" data-inset="false">
+        <div data-role="collapsible">
         <h3>What additional charges can be added to my base fare?</h3>
         <p>
                 Like all other airlines, we’re required to collect taxes, fees and charges for a variety of purposes, including
@@ -48,7 +62,8 @@
                  
                 
                 Find out more about the taxes, fees, charges and surcharges that may be added to your ticket at time of purchase.</p>
-        
+        </div>
+        <div data-role="collapsible">
         <h3>What happens if I buy a ticket and an emergency disrupts my travel?</h3>
         <p>
                 Air Canada will cancel any purchased ticket and provide a full refund without penalty up to 24 hours after purchase.
@@ -60,7 +75,8 @@
                 The best advice is to prepare and plan for the unexpected. Many travellers consider the purchase of cancellation insurance
                 as a good investment against such risks. Some payment cards also cover trip cancellations; check with your bank or service 
                 provider.The time to make these decisions is when you purchase your ticket.</p>
-        
+        </div>
+        <div data-role="collapsible">
         <h3>Are check-in times really important?</h3>
         <p>
                 Yes, they’re critical to the on-time departure and, more importantly, the on-time arrival of your flight.
@@ -84,7 +100,8 @@
                 to your gate. These security processes and procedures are a fact of life in today's airports and they often
                 take time. In the case of flights to the United States, you may also need to go through U.S. immigration and
                  customs formalities before boarding.
-        </p>
+        </p></div>
+        <div data-role="collapsible">
         <h3>What happens if there's a long delay – the kind where I could be on a plane for hours or wind up
              sleeping at the airport?</h3>
         <p>
@@ -106,7 +123,8 @@
                 But when it's our fault, we'll take full responsibility for the situation. If the delay continues for a matter of
                 hours, we’ll do our best to see that you get something to eat and drink. We’ll look after out-of-town customers who
                 are trapped at the airport overnight and find them hotel accommodations (subject to availability).
-        </p>
+        </p></div>
+        <div data-role="collapsible">
         
         <h3>Does you overbook its flights?</h3>
         <p>
@@ -121,7 +139,8 @@
                 In the rare circumstances (and it is rare) where you can't get on a flight due to overbooking, we offer compensation 
                 (in the form of a travel voucher or cash) and we make alternate arrangements to get you to your destination as quickly 
                 as possible.
-        </p>
+        </p></div>
+        <div data-role="collapsible">
         <h3>I know that my air travel has an impact on the environment. What can I - and Air Canada - do about it?</h3>
         <p>
                We all know that carbon dioxide (CO2) has an impact on climate change. You can make a difference by offsetting the CO2 
@@ -134,7 +153,8 @@
                procedures for take-offs and landings, reduced engine usage on the ground during taxiing and ground delays, cut fuel 
                consumption in the air with more efficient aircraft and flight plans, expanded our on-board recycling program and employed 
                hybrid technology for airport vehicles. Learn more about what we're doing.
-        </p>
+        </p></div>
+        <div data-role="collapsible">
         <h3>What happens if my flight is delayed?</h3>
         <p>
             Just the facts:
@@ -151,12 +171,18 @@
             But, if you've already arrived at the airport, we'll do our best to let you know what's going on at regular intervals and keep
             you updated about the status of your flight. In the case of last-minute cancellations, we'll help you rebook on the next Air Canada flight with available seats, or cancel the ticket and refund you if you prefer.
         
-        </p>
-        </div>
-        </section>
-        </section>
-</body
-     
+        </p></div></div>
+   </div>
+   <div data-role="footer"  data-position="fixed" id="bot" data-theme="b">        					 	
+              <h3 ><a href="#"  data-role="button"  id="foot_center" class="ui-btn-center copy">Copyright &copy; 2020</a>	</h3>
+              <div data-role="controlgroup" data-type="horizontal" class="ui-btn-right " id="hold_together">
+                      <a href="#" data-role="button">Get social with us:</a>
+                  <a href="#" id="foot_left" data-role="button"><img id="foot_left"	 src="../images/twitter.png" alt="social media"></a>
+                  <a href="#" data-role="button" id="foot_right" ><img id="foot_right" src="../images/insta.png" alt="social media"></a>
+                  <a href="#" data-role="button" id="foot_right" ><img id="foot_right" src="../images/whatsapp.png" alt="social media"></a>
+              </div>	
+   </div>
+      </div><!-- /page --> 
+</body>
+</html>
 
-            
-    
