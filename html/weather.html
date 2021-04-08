@@ -23,11 +23,13 @@
     
     <script>
         $(document).ready(function(){
-            //$('#nav-holder').load('html/nav.html');
-            
-            // $.get("html/nav.html", function(data){
-            //     $("#nav-holder").replaceWith(data);
-            // });
+  
+            var email =  sessionStorage.getItem("email");
+            if(email!=undefined && email.trim()!= '' && email!= 'undefined' && email!=null)
+            {
+                $('.login-label').empty();
+                $('.login-label').append('Sign out');
+            }
             var searchSuggestions = [
                         "Air India",
                         "Air Canada",
@@ -79,7 +81,7 @@
                   </fieldset>
             </li>
             <li class="nav-right"><a href="#"><img src="../images/settings.png" id="settings" alt="settings" ></a></li>
-            <li class="nav-right"><a href="../html/login.html">Login/Signup</a></li>
+            <li class="nav-right"><a href="../html/login.html"><label class="login-label">Login/Signup</label></a></li>
             <li class="nav-right desktop-only">
                 <form method="post" action="submit">
                     <input id="nav-search" type="text" placeholder="Search flight details here">
@@ -102,7 +104,7 @@
             <li><a href="../html/about_us.html"><img class="img-menu" src="../images/menu_about.png" alt="about"><br>FAQ</a></li>
 
             <li class="nav-right"><a href="#"><img class="img-menu" src="../images/settings.png"  alt="settings"><br>Settings</a></li>
-            <li class="nav-right"><a href="#"><img class="img-menu" src="../images/menu_login.png" alt="login-signup"><br>Login/Signup</a></li>
+            <li class="nav-right"><a href="#"><img class="img-menu" src="../images/menu_login.png" alt="login-signup"><br><label class="login-label">Login/Signup</label></a></li>
             
         </ul>
     </nav>
