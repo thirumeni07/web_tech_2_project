@@ -53,6 +53,16 @@
         })
 
     </script>
+    <script>
+        var popupWindow = null;
+        function centeredPopup(url,winName,w,h,scroll){
+            LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+            TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+            settings =
+            'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+            popupWindow = window.open(url,winName,settings);
+        }
+    </script>
     <link rel="stylesheet" href="css/home_desktop.css" media="screen and (min-width:769px)">
     <link rel="stylesheet" href="css/home_tab.css" media="screen and (min-width: 481px) and (max-width: 768px)">
     <link rel="stylesheet" href="css/slideshow.css" media="screen and (min-width:769px)">

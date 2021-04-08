@@ -113,6 +113,7 @@ $('#search-button').click(function(){
             })
         
         }
+ 
         
         
         function buildTable() {
@@ -128,7 +129,7 @@ $('#search-button').click(function(){
                           <td>${myList[i].duration}</td>
                           <td>${myList[i].arrival}</td>
                           <td>${myList[i].price}</td>
-                          <td> <input class="search_button book_ticket" type="submit" value="Book" onclick="centeredPopup('html/payment.html','myWindow','700','600','yes');return false"> </td>
+                          <td> <input class="search_button book_ticket" type="submit" value="Book" onclick="centeredPopup('html/payment.html','myWindow','700','650','yes');return false"> </td>
                           </tr>
                           `
                 table.append(row)
@@ -205,15 +206,7 @@ $('.theme').click(function(){
         $('.about-us-sub-heading ul a').css('background','linear-gradient(to right, rgb(8, 130, 187),rgb(12, 0, 0))');
     }
     });
-
-    var popupWindow = null;
-    function centeredPopup(url,winName,w,h,scroll){
-        LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
-        TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
-        settings =
-        'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
-        popupWindow = window.open(url,winName,settings)
-    }  
+ 
 
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
