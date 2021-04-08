@@ -177,7 +177,7 @@ $('.theme').click(function(){
         $('.table-search th').css('border','solid white');
         $('.footer').addClass('dark_red_theme');
         $('.bx-wrapper').addClass('dark_black_theme');
-    
+        $('.form-element label').css('color','white');
     }
     else{
         $('nav li a').css("background-color", "rgb(8, 130, 187)");
@@ -200,6 +200,7 @@ $('.theme').click(function(){
         $('.table-search th').css('border','solid black');
         $('.footer').removeClass('dark_red_theme');
         $('.bx-wrapper').removeClass('dark_black_theme');
+        $('.form-element label').css('color','black');
     }
     });
 

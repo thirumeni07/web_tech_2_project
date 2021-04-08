@@ -124,6 +124,7 @@ CSS RULES:
         text-align: center;
         padding: 1.25em 1.25em;
         text-decoration: none;
+        border-radius: 5em;
       }
       
       nav li a:hover {
@@ -277,6 +278,20 @@ CSS RULES:
         position:relative;
         margin-left: 5rem;
       }
-
+      .dark_red_theme{
+        background-color: rgb(170, 23, 23) !important;
+        background: rgb(170, 23, 23) !important;
+        color:white !important;
+      }
+      .dark_black_theme{
+        background-color: black !important;
+        background: black !important;
+        color:white !important;
+      }
+      .dark_gray_theme{
+        background-color: rgb(43, 41, 41) !important;
+        background: rgb(43, 41, 41) !important;
+        color:white !important;
+      }
     /* } */
    
