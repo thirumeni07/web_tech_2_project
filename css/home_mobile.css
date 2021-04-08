@@ -343,5 +343,14 @@ Label the data
   white-space: pre;
 }
 #single{
-margin-left: -1rem;
+  margin-left: 0.3rem;
 }
+#dest{
+  width:93%;
+}
+#fromplace{
+  width:78%;
+}
+
+#table-body tr:nth-child(even) {background: lightsalmon;}
+#table-body tr:nth-child(odd) {background:lightseagreen;}

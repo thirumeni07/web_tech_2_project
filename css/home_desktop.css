@@ -298,3 +298,6 @@ width: 500px;
   background: rgb(43, 41, 41) !important;
   color:white !important;
 }
+
+#table-body tr:nth-child(even) {background: lightsalmon;}
+#table-body tr:nth-child(odd) {background:lightseagreen;}

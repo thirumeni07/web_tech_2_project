@@ -297,3 +297,5 @@ width: 300px;
   content: "\a";
   white-space: pre;
 }
+#table-body tr:nth-child(even) {background: lightsalmon;}
+#table-body tr:nth-child(odd) {background:lightseagreen;}
