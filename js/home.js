@@ -149,7 +149,6 @@ $('.clear_button').click(function(){
 });
 
 $('.collapse-btn').click(function(){
-    
    $(this).parent().next().toggle();
 //    $('.collapse-cls, closest_cls').toggle();
 })
