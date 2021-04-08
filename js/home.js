@@ -39,6 +39,7 @@ $('#search-button').click(function(){
         1 - Loop Through Array & Access each value
       2 - Create Table Rows & append to table
     */
+  
     
     function pageWorker(tableData){
         var state = {
@@ -129,7 +130,7 @@ $('#search-button').click(function(){
                           <td>${myList[i].duration}</td>
                           <td>${myList[i].arrival}</td>
                           <td>${myList[i].price}</td>
-                          <td> <input class="search_button book_ticket" type="submit" value="Book" onclick="centeredPopup('html/payment.html','myWindow','700','650','yes');return false"> </td>
+                          <td> <input class="search_button book_ticket" type="submit" value="Book" onclick="centeredPopup('html/payment.html','myWindow','700','650','yes','${myList[i].price}');return false"> </td>
                           </tr>
                           `
                 table.append(row)
