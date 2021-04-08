@@ -169,6 +169,28 @@ nav li a:hover {
   
 } */
 
+/*  input box size adjustments  */
+.input-text{
+  border-radius: 1em;
+  width: 2em;
+  height: 2em;
+  padding-left:0.3em;
+  margin:0;
+} 
+.input-date{
+  border-radius: 1em;
+  width: 9.8em;
+}
+.travel-date{
+  padding-top: 0.6em;
+}
+#ticket-div select{
+  border-radius: 1em;
+  width: 8em;
+  height: 2em;
+  padding-left:0.5em;
+  margin:0;
+}
 /* #ticket-div select, .input-text, .input-date{
   
   border-radius: 5em;
